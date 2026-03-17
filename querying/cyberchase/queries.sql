@@ -38,16 +38,14 @@ WHERE season = 6
 AND air_date LIKE '2007%';
 
 -- Número de episodios entre 2018 y 2023
-SELECT COUNT(title) AS episodes_2018_2023
+SELECT COUNT(title) AS 'Episodes from 2018 to 2023'
 FROM episodes
-WHERE air_date >= '2018-01-01'
-AND air_date <= '2023-12-31';
+WHERE air_date BETWEEN '2018%' AND '2023%';
 
 -- Número de episodios entre 2002 y 2007
-SELECT COUNT(title) AS episodes_2002_2007
+SELECT COUNT(title) AS 'Episodes from 2002 to 2007'
 FROM episodes
-WHERE air_date >= '2002-01-01'
-AND air_date <= '2007-12-31';
+WHERE "air_date" BETWEEN '2002%' AND '2007%';
 
 
 ------------------------------------------
@@ -58,6 +56,11 @@ AND air_date <= '2007-12-31';
 SELECT title, topic
 FROM episodes
 WHERE topic LIKE '%raction%';
+
+-- Episodios relacionados con datos y mate
+SELECT "topic" 
+FROM "episodes" 
+WHERE "topic" LIKE '%ata%' OR "topic" LIKE '%ath%'
 
 ------------------------------------------
 -- ORDENAMIENTO
@@ -71,12 +74,12 @@ ORDER BY production_code;
 -- Episodios de temporada 5 ordenados descendentemente
 SELECT title
 FROM episodes
-WHERE season = 5
+WHERE season = 5 
 ORDER BY title DESC;
 
 -----------------------------------------------
 -- AGREGACIONES
 ------------------------------------------------
 -- Número de títulos únicos
-SELECT COUNT(DISTINCT title) AS unique_episode_titles
+SELECT COUNT(DISTINCT title) AS 'Unique episode titles'
 FROM episodes;
