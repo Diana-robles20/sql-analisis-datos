@@ -10,7 +10,12 @@ Aplicar SQL para explorar, analizar y estructurar datos en bases relacionales.
 ### Querying
 Consultas sobre múltiples datasets:
 
-- Cyberchase → análisis de episodios (filtros, fechas, agregaciones)
+### Cyberchase
+
+Cyberchase es una serie animada educativa transmitida por el Public Broadcasting Service (PBS) desde 2002. Su objetivo es mostrar que las matemáticas están presentes en la vida cotidiana y que cualquier persona puede aprenderlas. A lo largo de los episodios, se abordan conceptos de matemáticas, ciencia y resolución de problemas.
+
+En este proyecto se analiza la base de datos (`cyberchase.db`) que contiene información de los episodios en la tabla `episodes`.
+
 - Normals → (pendiente)
 - Players → (pendiente)
 
