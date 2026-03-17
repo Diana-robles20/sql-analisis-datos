@@ -16,7 +16,7 @@ Cyberchase es una serie animada educativa transmitida por el Public Broadcasting
 
 En este proyecto se analiza la base de datos (`cyberchase.db`) que contiene información de los episodios en la tabla `episodes`.
 
-#### Estructura de la tabla 'episodes'
+#### Estructura de la tabla `episodes`
 
 - `id`: identificador único de cada episodio  
 - `season`: número de temporada en la que se emitió el episodio  
