@@ -33,3 +33,8 @@ Base de datos proporcionada por curso de Harvard (CS50 Introduction to Databases
 
 ---
 
+## Cómo usar este proyecto
+
+```bash
+sqlite3 cyberchase.db
+.read queries.sql
