@@ -1,6 +1,6 @@
 # SQL Portfolio: Querying, Relating & Designing
 
-## 🎯 Objetivo
+## Objetivo
 Aplicar SQL para explorar, analizar y estructurar datos en bases relacionales.
 
 ---
