@@ -45,6 +45,12 @@ FROM players
 WHERE bats = 'R'
 ORDER BY first_name ASC, last_name ASC;
 
+-- Jugadores nacidos en Pittsburgh, PA ordenados por debut
+SELECT first_name, last_name, debut
+FROM players
+WHERE birth_city = 'Pittsburgh'
+AND birth_state = 'PA'
+ORDER BY debut DESC, first_name ASC, last_name ASC;
 
 --------------------------------------------------------------------------------------------------------------------------------------
 -- FILTROS POR FECHA
@@ -61,19 +67,6 @@ SELECT first_name, last_name
 FROM players
 WHERE final_game LIKE '2022%'
 ORDER BY first_name ASC, last_name ASC;
-
-
--------------------------------------------------------------------------------------------------------------------------------------
--- FILTROS COMPUESTOS
--------------------------------------------------------------------------------------------------------------------------------------
-
--- Jugadores nacidos en Pittsburgh, PA ordenados por debut
-SELECT first_name, last_name, debut
-FROM players
-WHERE birth_city = 'Pittsburgh'
-AND birth_state = 'PA'
-ORDER BY debut DESC, first_name ASC, last_name ASC;
-
 
 -------------------------------------------------------------------------------------------------------------------------------------
 -- AGREGACIONES
