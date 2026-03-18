@@ -58,14 +58,46 @@ En este proyecto se utiliza una base de datos (`players.db`) con información de
 - Búsqueda con patrones (LIKE)
 - Manejo de fechas
 - Ordenamiento (ORDER BY)
-- Agregaciones (COUNT, DISTINCT)
+- Agregaciones (COUNT, DISTINCT, AVG)
 - Análisis estructurado de datos
 
 ---
 
+## Relating
+
+En esta sección se trabaja con relaciones entre tablas para resolver problemas más complejos mediante SQL.
+
+### Contexto
+
+Se simula un sistema de entrega de correo en la ciudad de Boston. Como responsable del seguimiento de paquetes, el objetivo es investigar casos de paquetes perdidos reportados por clientes.
+
+Para cada caso, se busca determinar:
+- La ubicación actual del paquete
+- El tipo de ubicación (residencial, negocio, etc.)
+- El contenido del paquete
+
+La información disponible es limitada, por lo que es necesario analizar la base de datos (`packages.db`) que contiene registros del tránsito de paquetes en la ciudad.
+
+### Enfoque
+
+Para resolver los casos, se utilizan consultas SQL que relacionan múltiples tablas mediante:
+- JOINs 
+- Claves primarias y foráneas
+- Filtros combinados
+- Subconsultas
+
+---
+### Habilidades demostradas
+
+- Análisis relacional de datos  
+- Uso de JOINs para combinar información  
+- Resolución de problemas a partir de datos incompletos  
+- Pensamiento lógico aplicado a bases de datos  
+---
+
 ## Datasets
 
-Bases de datos proporcionada por curso de Harvard (CS50 Introduction to Databases with SQL).
+Bases de datos proporcionadas por curso de Harvard (CS50 Introduction to Databases with SQL).
 
 ---
 
