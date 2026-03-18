@@ -5,9 +5,9 @@ Aplicar SQL para explorar, analizar y estructurar datos en bases relacionales.
 
 ---
 
-## Estructura del proyecto
+## Estructura del portafolio
 
-### Querying
+## Querying
 Consultas sobre múltiples datasets:
 
 ### Cyberchase
