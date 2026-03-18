@@ -67,7 +67,8 @@ En este proyecto se utiliza una base de datos (`players.db`) con información de
 
 En esta sección se trabaja con relaciones entre tablas para resolver problemas más complejos mediante SQL.
 
-### Contexto
+### Packages, please
+#### Contexto
 
 Se simula un sistema de entrega de correo en la ciudad de Boston. Como responsable del seguimiento de paquetes, el objetivo es investigar casos de paquetes perdidos reportados por clientes.
 
@@ -78,21 +79,41 @@ Para cada caso, se busca determinar:
 
 La información disponible es limitada, por lo que es necesario analizar la base de datos (`packages.db`) que contiene registros del tránsito de paquetes en la ciudad.
 
-### Enfoque
-
-Para resolver los casos, se utilizan consultas SQL que relacionan múltiples tablas mediante:
-- JOINs 
-- Claves primarias y foráneas
-- Filtros combinados
-- Subconsultas
+### Casos de análisis
 
 ---
-### Habilidades demostradas
 
-- Análisis relacional de datos  
-- Uso de JOINs para combinar información  
-- Resolución de problemas a partir de datos incompletos  
-- Pensamiento lógico aplicado a bases de datos  
+#### Caso 1: Carta extraviada
+
+Se analiza el envío de una carta de felicitaciones desde la dirección *900 Somerville Avenue* hacia *2 Finnegan Street*.  
+El objetivo es determinar si la carta fue entregada correctamente y localizar su estado actual dentro del sistema.
+
+El objetivo es:
+- Determinar el tipo de domicilio en el que la carta fue entregada
+- La dirección donde fue entregada
+
+---
+
+#### Caso 2: Entrega sin remitente
+
+Se investiga un paquete sin dirección de origen registrada, cuyo contenido corresponde a un objeto recreativo (juguete de baño).
+
+Este caso requiere:
+- Determinar el tipo de domicilio donde el paquete fue entregado
+- El contenido del paquete
+
+---
+
+#### Caso 3: Regalo no entregado
+
+Se analiza un paquete enviado desde *109 Tileston Street* hacia *728 Maple Place*, cuya entrega presenta retraso.
+
+El objetivo es rastrear el paquete y determinar su estado actual dentro del sistema de entregas.
+
+Este caso requiere:
+- Determinar el contenido del regalo
+- Quién lo recibió
+  
 ---
 
 ## Datasets
