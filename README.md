@@ -72,5 +72,5 @@ Bases de datos proporcionada por curso de Harvard (CS50 Introduction to Database
 ## Cómo usar este proyecto
 
 ```bash
-sqlite3 cyberchase.db
+sqlite3 (nombre de la base de datos).db
 .read queries.sql
