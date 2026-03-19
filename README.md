@@ -214,6 +214,68 @@ Evaluación del personal educativo por distrito.
 - Los **distritos** pueden no hacer **gasto** o múltiples y asimismo no recibir **evaluación del personal** o recibir múltiples  
 
 ---
+### Moneyball
+
+Este dataset contiene información sobre jugadores, equipos, desempeño y salarios en la MLB, permitiendo analizar la relación entre rendimiento deportivo y costo económico.
+
+---
+
+### Estructura de la base de datos
+
+#### players
+Contiene información básica de los jugadores.
+- `id`: identificador del jugador  
+- `first_name`: nombre  
+- `last_name`: apellido  
+
+---
+
+#### teams
+Información de los equipos.
+- `id`: identificador del equipo  
+- `name`: nombre del equipo  
+
+---
+
+#### performances
+Registra el desempeño de los jugadores por equipo y año.
+- `player_id`: jugador  
+- `team_id`: equipo  
+- `year`: año  
+- `H`: número de hits  
+- `HR`: número de home runs  
+
+---
+
+#### salaries
+Información de salarios de los jugadores.
+- `player_id`: jugador  
+- `team_id`: equipo  
+- `year`: año  
+- `salary`: salario en dólares  
+
+---
+
+### Relaciones clave
+
+- Un **jugador** genera múltiples **performances**  
+- Cada **performance** está asociada a un **equipo**  
+- Un **jugador** puede recibir múltiples **salarios** dependiendo del equipo y año  
+- Los **equipos** pagan salarios a los jugadores  
+
+---
+
+### Habilidades demostradas
+
+- Uso de **SQL para análisis de datos relacionales**, integrando información de múltiples tablas mediante JOINs y subconsultas  
+- Capacidad para **resolver problemas del mundo real** a partir de datos (seguimiento de paquetes, análisis educativo y deportivo)  
+- Aplicación de **funciones de agregación y análisis por grupos** (AVG, SUM, COUNT, GROUP BY, HAVING)  
+- Uso de **lógica analítica y secuencial** para construir soluciones paso a paso  
+- Manejo de **datos incompletos o ambiguos** mediante filtros y condiciones adecuadas  
+- Desarrollo de **métricas e indicadores** para evaluar desempeño (ej. eficiencia, promedios, comparaciones)  
+- Comprensión de **modelos relacionales y relaciones entre entidades**   
+
+---
 
 ## Datasets
 
