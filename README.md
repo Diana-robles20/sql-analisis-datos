@@ -141,13 +141,6 @@ Este caso requiere:
   
 ---
 
-### Relaciones clave
-
-- Un **distrito** contiene múltiples **escuelas**  
-- Cada **escuela** reporta una métrica de **graduación**  
-- Los **distritos** pueden no hacer **gasto** o múltiples y asimismo no recibir **evaluación del personal** o recibir múltiples  
-
----
 ### Moneyball
 
 Este dataset contiene información sobre jugadores, equipos, desempeño y salarios en la MLB, permitiendo analizar la relación entre rendimiento deportivo y costo económico.
